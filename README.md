@@ -56,7 +56,8 @@ gcc titkosito.c -o titkosito.exe
 
 # Linux vagy MacOS alatt:
 gcc titkosito.c -o titkosito
-Program futtatása
+
+# Program futtatása
 
 # Windows:
 .\titkosito.exe
