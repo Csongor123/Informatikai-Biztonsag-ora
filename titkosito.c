@@ -3,10 +3,10 @@
 
 #define BUFFER_SIZE 1024
 
-/* Egyszerû belsõ kulcs */
+
 static unsigned int GLOBAL_KEY = 0xA5B35791;
 
-/* Álvéletlen kulcsbájt generálása */
+
 unsigned char next_key_byte(unsigned int *state, long index) {
     *state ^= (*state << 13);
     *state ^= (*state >> 17);
@@ -16,7 +16,7 @@ unsigned char next_key_byte(unsigned int *state, long index) {
     return (unsigned char)(*state & 0xFF);
 }
 
-/* Fájl titkosítása vagy visszafejtése */
+
 int process_file(const char *input_name, const char *output_name) {
     FILE *input = fopen(input_name, "rb");
     FILE *output = fopen(output_name, "wb");
@@ -61,7 +61,7 @@ int process_file(const char *input_name, const char *output_name) {
     return 0;
 }
 
-/* Visszafejtéshez külön függvény, mert a láncolás miatt más a sorrend */
+
 int decrypt_file(const char *input_name, const char *output_name) {
     FILE *input = fopen(input_name, "rb");
     FILE *output = fopen(output_name, "wb");
