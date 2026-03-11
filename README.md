@@ -1,0 +1,2 @@
+# Informatikai Biztonsag ora
+
