@@ -45,8 +45,6 @@ A titkosítás során figyelembe veszi:
 - az előző titkosított bájtot
 - egy belső kulcsállapotot
 
-Ez a módszer bonyolultabb, mint egy egyszerű eltolásos titkosítás.
-
 # Fordítás
 
 A program GCC fordítóval fordítható.
