@@ -57,5 +57,4 @@ gcc titkosito.c -o titkosito
 
 # Program futtatása
 Amikor futtatni akarjuk a programot, először töltsük le a .ZIP fájl-t, utána nyissuk  meg a titkosito.c fájlt és futassuk a programot, ezek után a dokumentum.txt-ben írt szövegünk egy visszafejtett.txt-ben kapjuk vissza.
-
 A program futtatása után automatikusan létrejönnek a titkosított és visszafejtett fájlok.
